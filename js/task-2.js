@@ -5,7 +5,7 @@
 //! ============================
 'use strict';
 
-console.log('\nTask-1\n');
+console.log('\nTask-2\n');
 
 function calcAverageCalories(days) {
   let totalQuantity = 0;

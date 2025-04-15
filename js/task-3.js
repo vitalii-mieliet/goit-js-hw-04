@@ -2,10 +2,7 @@
 /*
 Об’єкт profile описує профіль користувача на ігровій платформі. У його властивостях зберігається ім’я профілю username та кількість активних годин playTime, проведених у грі.
 
-const profile = {
-    username: "Jacob",
-  playTime: 300,
-};
+
 
 Доповни об’єкт profile методами для роботи з його властивостями.
 
@@ -14,13 +11,30 @@ const profile = {
 Метод getInfo() має повертати рядок формату <Username> has <amount> active hours!, де <Username> — це ім’я профілю, а <amount> — кількість ігрових годин.
  */
 //! ============================
+'use strict';
+
+console.log('\nTask-3\n');
+
+const profile = {
+  username: 'Jacob',
+  playTime: 300,
+  changeUsername(newName) {
+    this.username = newName;
+  },
+  updatePlayTime(hours) {
+    this.playTime += hours;
+  },
+  getInfo() {
+    return console.log(`${this.username} has ${this.playTime} active hours!`);
+  },
+};
 
 //! ============================
 
-// console.log(profile.getInfo()); // "Jacob has 300 active hours!"
+console.log(profile.getInfo()); // "Jacob has 300 active hours!"
 
-// profile.changeUsername("Marco");
-// console.log(profile.getInfo()); // "Marco has 300 active hours!"
+profile.changeUsername('Marco');
+console.log(profile.getInfo()); // "Marco has 300 active hours!"
 
-// profile.updatePlayTime(20);
-// console.log(profile.getInfo()); // "Marco has 320 active hours!"
+profile.updatePlayTime(20);
+console.log(profile.getInfo()); // "Marco has 320 active hours!"
