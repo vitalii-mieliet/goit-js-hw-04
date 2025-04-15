@@ -7,13 +7,13 @@
 
 console.log('\nTask-1\n');
 
-// function calcAverageCalories(days) {
-//   let totalQuantity = 0;
-//   for (const day of days) {
-//     totalQuantity += day.calories;
-//   }
-//   return totalQuantity / days.length;
-// }
+function calcAverageCalories(days) {
+  let totalQuantity = 0;
+  for (const day of days) {
+    totalQuantity += day.calories;
+  }
+  return totalQuantity / days.length;
+}
 
 //! ============================
 
