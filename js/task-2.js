@@ -8,10 +8,15 @@
 console.log('\nTask-2\n');
 
 function calcAverageCalories(days) {
+  if (days.length === 0) {
+    return 0;
+  }
+
   let totalQuantity = 0;
   for (const day of days) {
     totalQuantity += day.calories;
   }
+
   return totalQuantity / days.length;
 }
 
